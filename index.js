@@ -17,3 +17,8 @@ function getDay(name) {
     }
 }
 
+function getGender(){
+    let option = document.getElementById("gender");
+   
+}
+
