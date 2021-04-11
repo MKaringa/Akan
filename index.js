@@ -21,7 +21,9 @@ function getGender(){
     let option = document.getElementById("gender");
     for(let i = 0; i < option.length; i++){
         if(option[i].checked){
-            
+            let gender = option[i].value;
+            return gender;
+        }
     } 
 }
 
