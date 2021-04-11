@@ -13,6 +13,7 @@ function getDay(name) {
         alert('Enter a valid date');
     } else{
         let day = Math.floor (((century/4) - 2* century -1 )+ ((5 * yearsDigits/4)) + ((26*(month+1)/10)) + date) % 7;
+        return day
     }
 }
 
