@@ -1,4 +1,4 @@
-function getDay(name) {
+function getDay() {
     let date = document.getElementById("day_input").value;
     let month = document.getElementById("month_input").value;
     let year = document.getElementById("year_input").value;
@@ -27,3 +27,18 @@ function getGender(){
     } 
 }
 
+function getName(){
+    let male = ['Kwasi', 'Kwadwo' 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
+    let female = ['Akosua', 'Adowa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
+    let  day = ['Sunday', 'Monday', 'Teusday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    if (getGender() === 'male' && getDay() >= 0){
+        document.getElementById('post').innerHTML = ('Hello! If you were Ghanaian born a ') + day[getDay(name)] + (',') + ('Your Akan name would be ') + male[getDay(name)] + ('.')
+    } else if (getGender() === 'female' && getDay() >= 0){
+        document.getElementById('post').innerHTML = 
+    ('Hello! If you were Ghanaian born a ') + day[getDay(name)] + (',') + ('Your Akan name would be ') + female[getDay(name)] + ('.')
+    } else {
+        alert('Kindly enter valid details then retry');
+
+    }
+}
